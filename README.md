@@ -1,3 +1,3 @@
-Website is under renovation.
+Getting a new look 
 
-Hope to see you soon ;)
+Hope to see you soon 😄
