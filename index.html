@@ -1,48 +1,555 @@
 <!DOCTYPE html>
-<html>
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="shortcut icon" href="./favicon.png">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <style type="text/css">
-      html, body {
-        height: 100%;
-        overflow: hidden;
-        background-color: #000;
-      }
-      .container {
-        position: relative;
-        height: 100%;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        z-index: 1;
-      }
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="yashovardhan">
+    <link rel="shortcut icon" href="./favicon.png" />
 
-      #particles-js {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        z-index: 2;
-      }
-    </style>
-    <title>Yashovardhan</title>
-  </head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600,700,300i,600i,700i|Raleway:600,800" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" integrity="sha512-+EoPw+Fiwh6eSeRK7zwIKG2MA8i3rV/DGa3tdttQGgWyatG/SkncT53KHQaS5Jh9MNOT3dmFL0FjTY08And/Cw==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
 
-  <body>
-    <div id="particles-js"></div>
+    <title>Yashovardhan Agrawal - OpenSource DevRel</title>
+    <script src="https://kit.fontawesome.com/400db8db7c.js" crossorigin="anonymous"></script>
 
-    <div class="container">
-      <img class="img-responsive" src="./logo.png" alt="Yashovardhan" width="30%">
+</head>
+
+<body>
+
+<div class="page-wrapper">
+    <header>
+        <div class="brand animate"><img src="assets/img/logo.png" alt="" style="width: 20vh; height: auto;"></div>
+        <nav>
+            <ul class="navigation animate">
+                <li><a href="" data-toggle="modal" data-target="#modal-about">About</a></li>
+                <li><a href="" data-toggle="modal" data-target="#modal-projects">Projects</a></li>
+                <li><a href="mailto:connect@yashovardhan.dev" target="_blank">Let's Connect!</a</li>
+            </ul>
+            <!--end navigation-->
+        </nav>
+    </header>
+    <div class="content-wrapper">
+        <div class="content-main animate">
+            <div class="container">
+                <h1 class="font-size-90" style="-webkit-text-stroke: 1px white;">Hi, I'm Yash</h1>
+                <h2 style="font-weight: 700; -webkit-text-stroke: 1px white;">Open Source JavaScript Developer | Developer Relations</h2>
+            </div>
+            <!--end container-->
+        </div>
+        <!--end content-main-->
+        <div class="background-wrapper">
+            <div id="background-content"></div>
+        </div>
+        <!--end background-wrapper-->
     </div>
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="./js/script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  </body>
+    <!--end content-wrapper-->
+    <footer>
+        <div class="social-icons animate">
+            <a href="https://twitter.com/yashovardhan" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="https://github.com/yashovardhan" target="_blank"><i class="fa fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/yashovardhanagrawal/" target="_blank"><i class="fa fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/yashovardhanagrawal/" target="_blank"><i class="fa fa-instagram"></i></a>
+            <a href="https://medium.com/@yashovardhana" target="_blank"><i class="fa fa-medium"></i></a>
+            <a href="mailto:hi@yashovardhan.dev" target="_blank"><i class="fa fa-envelope-open"></i></a>
+        </div>
+        <!--end social-icons-->
+    </footer>
+</div>
+<!--end page-wrapper-->
 
-</html>
+<!-- Modal About -->
+<div class="modal fade" id="modal-about" tabindex="-1" role="dialog" aria-labelledby="modal-about-label">
+    <div class="modal-dialog" role="document">
+        <div class="container">
+            <div class="modal-content">
+                <div class="modal-header" data-background-color="#F0F0FE">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h2 class="modal-title" id="modal-about-label">About</h2>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-3">
+                            <section>
+                                        <div class="person">
+                                            <div class="image">
+                                                <div class="bg-transfer"><img src="assets/img/yash.jpg" alt=""></div>
+                                            </div>
+                                            <h4>Yashovardhan Agrawal</h4>
+                                            <h5>Hackathon Community Manager APAC & EU - <a href="https://mlh.io">Major League Hacking</a></h5>
+                                            <h5><i class="fa fa-map-marker"></i><span style="padding-left: 10px;">Bangalore, India</span></h5>
+                                            <div class="social-icons">
+                                                <a href="https://twitter.com/yashovardhan" target="_blank"><i class="fa fa-twitter"></i></a>
+                                                <a href="https://github.com/yashovardhan" target="_blank"><i class="fa fa-github"></i></a>
+                                                <a href="https://www.linkedin.com/in/yashovardhanagrawal/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                                                <a href="https://www.instagram.com/yashovardhanagrawal/" target="_blank"><i class="fa fa-instagram"></i></a>
+                                                <a href="https://medium.com/@yashovardhana" target="_blank"><i class="fa fa-medium"></i></a>
+                                            </div>
+                                            <a href="hello@yashovardhan.dev"><h5 style="font-weight: 600;">hello@yashovardhan.dev</h5></a>
+
+                                        </div>
+                                        <!--end person-->
+                                <!--end row-->
+                            </section>
+                        </div>
+                        <!--end col-md-4-->
+                        <div class="col-md-9 col-sm-9">
+                            <section>
+                                <h4>
+                                    I'm a JavaScript Developer with a knack for Developer Relations. Having recently moved into Community Management, I owe my involvement with the various open source communities for putting me on this ultimate career path.
+                                </h4>
+                                <h4>
+                                    My aim is to empower student developers across India and the countries in the Asia Pacific region to find a place in the welcoming world of open source — and help them hone their skills to compete with international standards. 
+                                </h4>
+                            </section>
+                            <section>
+                                <h3>Professional Experience</h3>
+                                <table class="table table-striped">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="item">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <h4>Hackathon Community Manager - APAC & EU</h3>
+                                                            <h5><a href="https://mlh.io">Major League Hacking</a></h4>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <time class="period">Dec 2019 - Present</time>
+                                                        </div>
+                                                    </div>
+                                                    <p>
+                                                        Recently moved into Developer Relations, my current role aims at growing a community program in the Asia Pacific region for a US-based firm, Major League Hacking (MLH). The major countries of focus are India, Singapore & Australia. Additionally, I'm also handling the European and partly North American Leagues, overlapping with my timezone.
+                                                        <br>
+                                                        Major Projects handled:
+                                                        <ul style="opacity: .6;">
+                                                            <li>Strategising the Asia Pacific Regional Program</li>
+                                                            <li>Making the Initial Digital Hackathon Processes</li>
+                                                            <li>Season Launch 2021</li>
+                                                            <li>Automating major portions of the internal processes</li>
+                                                            <li>Hackathon Organizer Guide</li>
+                                                            <li>Community Catalysts Program</li>
+                                                        </ul>
+                                                    </p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td>
+                                                <div class="item">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <h4>Software Engineer</h3>
+                                                            <h5><a href="https://finin.in/" target="_blank">Finin</a></h4>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <time class="period">Jul 2019 - Dec 2019</time>
+                                                        </div>
+                                                    </div>
+                                                    <p>
+                                                        Finin is a neo-banking platform where I was one of the first employees handling the Frontend Development Team.
+                                                        As the only Developer of the startup for quite some time, I
+                                                        <ul style="opacity: .6;">
+                                                            <li>Was a key member of the product strategy discussions.</li>
+                                                            <li>Developed a React Native based banking application with high levels of optimisations in security and size.</li>
+                                                            <li>Developed a Wiki Portal for Finin on Jekyll.</li>
+                                                            <li>Developed Sample APIs using Swagger Hub in the absence of the backend to make a working prototype.</li>
+                                                            <li>Managed parts of the hiring process where I developed customised tasks for hiring different Frontend and Backend developers.</li>
+                                                        </ul>
+                                                    </p>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        
+                                        <tr>
+                                            <td>
+                                                <div class="item">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <h4>Google Summer of Code Mentor '18</h3>
+                                                            <h5><a href="https://coala.io/" target="_blank">coala</a></h4>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <time class="period">May 2018 - Aug 2018</time>
+                                                        </div>
+                                                    </div>
+                                                    <p>
+                                                        coala is a unified interface for static analysis and linting of your code, irrespective of underlying programming languages. Got a chance to be in the core developers team, working on various projects across the organisation.
+                                                        <br>
+                                                        For GSoC 2018, I had mentored the Meta Review / Git Task Lists Project for Yana Agun Siswanto.
+                                                        <br>
+                                                        Tech Stack: JavaScript (EmberJS), GitHub API, Gerrit, GitLab
+
+                                                    </p>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <div class="item">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <h4>React Native Developer</h3>
+                                                            <h5><a href="https://www.linkedin.com/company/mybiller/" target="_blank">Biller</a></h4>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <time class="period">Apr 2018 - Mar 2019</time>
+                                                        </div>
+                                                    </div>
+                                                    <p>
+                                                        Main developer of the Mobile User-App and Waiter-App for the Biller platform. Managed the whole client side application
+                                                    </p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                  </table>
+                            </section>
+                            
+                            <section>
+                                <h3>Community Experience</h3>
+                                <table class="table table-striped">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="item">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <h4>Google Code-in Mentor '17 '18 '19</h3>
+                                                            <h5><a href="https://github.com/JBossOutreach" target="_blank">REDHAT JBoss Community</a></h4>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <time class="period">2017 - 2019</time>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td>
+                                                <div class="item">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <h4>Mentor of Change</h3>
+                                                            <h5><a href="https://aim.gov.in/" target="_blank">Atal Innovation Mission - Govt. of India</a></h4>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <time class="period">Jul 2018 - 2019</time>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <div class="item">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <h4>Campus Expert</h3>
+                                                            <h5><a href="https://githubcampus.expert/" target="_blank">GitHub</a></h4>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <time class="period">Oct 2017 - May 2019</time>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <div class="item">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <h4>Co-Founder & Organiser</h3>
+                                                            <h5><a href="https://hackference.in" target="_blank">Hackference India</a></h4>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <time class="period">May 2018 - Apr 2019</time>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>                                        
+                                    </tbody>
+                                  </table>
+                            </section>
+                            <section>
+                                <h3>Education</h3>
+                                <table class="table table-striped">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="item">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <h4>Bachelor of Technlogy</h3>
+                                                            <h5><a href="https://lnmiit.ac.in" target="_blank">The LNM Institute of Information Technology</a></h4>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <time class="period">August 2016 - May 2020</time>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>                               
+                                    </tbody>
+                                  </table>
+                            </section>
+                            <section>
+                                <h3>Community Skills</h3>
+                                <div class="skill">
+                                    <h4>Everything related to Hackathons & Tech Events</h4>
+                                    <aside>90%</aside>
+                                    <figure class="bar">
+                                        <div class="bar-active width-80"></div>
+                                        <div class="bar-background"></div>
+                                    </figure>
+                                </div>
+                                <!--end skill-->
+                                <div class="skill">
+                                    <h4>Technical Writing, Account Management, Program Management</h4>
+                                    <aside>80%</aside>
+                                    <figure class="bar">
+                                        <div class="bar-active width-100"></div>
+                                        <div class="bar-background"></div>
+                                    </figure>
+                                </div>
+                                <!--end skill-->
+                                <div class="skill">
+                                    <h4>Public Speaking, Community Building</h4>
+                                    <aside>80%</aside>
+                                    <figure class="bar">
+                                        <div class="bar-active width-60"></div>
+                                        <div class="bar-background"></div>
+                                    </figure>
+                                </div>
+                                <!--end skill-->
+                            </section>
+                            <section>
+                                <h3>Technical Skills</h3>
+                                <div class="skill">
+                                    <h4>React Native, Redux</h4>
+                                    <aside>85%</aside>
+                                    <figure class="bar">
+                                        <div class="bar-active width-80"></div>
+                                        <div class="bar-background"></div>
+                                    </figure>
+                                </div>
+                                <!--end skill-->
+                                <div class="skill">
+                                    <h4>JavaScript, MERN Stack</h4>
+                                    <aside>75%</aside>
+                                    <figure class="bar">
+                                        <div class="bar-active width-100"></div>
+                                        <div class="bar-background"></div>
+                                    </figure>
+                                </div>
+                                <!--end skill-->
+                                <div class="skill">
+                                    <h4>Tensorflow.js, Workflow Automation</h4>
+                                    <aside>60%</aside>
+                                    <figure class="bar">
+                                        <div class="bar-active width-60"></div>
+                                        <div class="bar-background"></div>
+                                    </figure>
+                                </div>
+                                <!--end skill-->
+                            </section>
+                            <section>
+                                <h3>Highlights</h3>
+                                <ul>
+                                    <li><h4>Hosted top conferences like GitHub Universe 2020, MLH Hackcon 2020, MLH LHD Learn 2020</h4></li>
+                                    <li><h4>Managed and owned the whole Asia Pacific region for MLH, making strategic plans on each aspect of the League</h4></li>
+                                    <li><h4>Restructured and revamped the whole documentation on Hackathons - MLH Organizer Guide</h4></li>
+                                    <li><h4>Gave talks about Open Source in 15+ colleges of India including top IITs & NITs</h4></li>
+                                    <li><h4>Had a session in the Google Summer of Code Mentors’ Summit 2018 in Sunnyvale, California representing coala.</h4></li>
+                                    <li><h4>10x Hackathon Organiser</h4></li>
+                                    <li><h4>Won 10+ Hackathons & Open Source Events</h4></li>
+                                </ul>
+                            </section>
+                        </div>
+                        <!--end col-md-7-->
+                    </div>
+                    <!--end row-->
+                </div>
+                <!--end modal-body-->
+            </div>
+            <!--end modal-content-->
+        </div>
+        <!--end container-->
+    </div>
+    <!--end modal-dialog-->
+</div>
+<!--end #modal-about-->
+
+<!-- Modal Our Works -->
+<div class="modal fade" id="modal-projects" tabindex="-1" role="dialog" aria-labelledby="modal-projects-label">
+    <div class="modal-dialog" role="document">
+        <div class="container">
+            <div class="modal-content">
+                <div class="modal-header" data-background-color="#F0F0FE">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h2 class="modal-title" id="modal-projects-label">Our Works</h2>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-4">
+                            <a href="assets/img/1.jpg" class="work image-popup">
+                                <div class="description">
+                                    <h4>Paperworks</h4>
+                                    <h5>Product Design</h5>
+                                </div>
+                                <!--end description-->
+                                <div class="image">
+                                    <div class="bg-transfer"><img src="assets/img/1.jpg" alt=""></div>
+                                </div>
+                            </a>
+                            <!--end work-->
+                        </div>
+                        <!--end col-md-4-->
+                        <div class="col-md-4 col-sm-4">
+                            <a href="assets/img/2.jpg" class="work image-popup">
+                                <div class="description">
+                                    <h4>Landscape</h4>
+                                    <h5>Illustration</h5>
+                                </div>
+                                <!--end description-->
+                                <div class="image">
+                                    <div class="bg-transfer"><img src="assets/img/2.jpg" alt=""></div>
+                                </div>
+                            </a>
+                            <!--end work-->
+                        </div>
+                        <!--end col-md-4-->
+                        <div class="col-md-4 col-sm-4">
+                            <a href="assets/img/3.jpg" class="work image-popup">
+                                <div class="description">
+                                    <h4>Massa</h4>
+                                    <h5>Logo design</h5>
+                                </div>
+                                <!--end description-->
+                                <div class="image">
+                                    <div class="bg-transfer"><img src="assets/img/3.jpg" alt=""></div>
+                                </div>
+                            </a>
+                            <!--end work-->
+                        </div>
+                        <!--end col-md-4-->
+                        <div class="col-md-4 col-sm-4">
+                            <a href="assets/img/4.jpg" class="work image-popup">
+                                <div class="description">
+                                    <h4>11Street</h4>
+                                    <h5>Logo design</h5>
+                                </div>
+                                <!--end description-->
+                                <div class="image">
+                                    <div class="bg-transfer"><img src="assets/img/4.jpg" alt=""></div>
+                                </div>
+                            </a>
+                            <!--end work-->
+                        </div>
+                        <!--end col-md-4-->
+                        <div class="col-md-4 col-sm-4">
+                            <a href="assets/img/5.jpg" class="work image-popup">
+                                <div class="description">
+                                    <h4>App</h4>
+                                    <h5>Branding</h5>
+                                </div>
+                                <!--end description-->
+                                <div class="image">
+                                    <div class="bg-transfer"><img src="assets/img/5.jpg" alt=""></div>
+                                </div>
+                            </a>
+                            <!--end work-->
+                        </div>
+                        <!--end col-md-4-->
+                        <div class="col-md-4 col-sm-4">
+                            <a href="assets/img/6.jpg" class="work image-popup">
+                                <div class="description">
+                                    <h4>Moon</h4>
+                                    <h5>Photography</h5>
+                                </div>
+                                <!--end description-->
+                                <div class="image">
+                                    <div class="bg-transfer"><img src="assets/img/6.jpg" alt=""></div>
+                                </div>
+                            </a>
+                            <!--end work-->
+                        </div>
+                        <!--end col-md-4-->
+                    </div>
+                    <!--end row-->
+                </div>
+                <!--end modal-body-->
+            </div>
+            <!--end modal-content-->
+        </div>
+        <!--end container-->
+    </div>
+    <!--end modal-dialog-->
+</div>
+<!--end #modal-projects-->
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js" integrity="sha512-UdIMMlVx0HEynClOIFSyOrPggomfhBKJE28LKl8yR3ghkgugPnG6iLfRfHwushZl1MOPSY6TsuBDGPK2X4zYKg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js" integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w==" crossorigin="anonymous"></script>
+<script  src="assets/js/script.js"></script>
+<script  src="assets/js/sketch.min.js"></script>
+
+<script>
+
+    var COLOURS = [ '#656795', '#F0F0FE', '#2f2e40', '#FFFFFF'];
+    var radius = 0;
+    var randomColor = 0;
+
+    Sketch.create({
+
+        container: document.getElementById( 'background-content' ),
+        autoclear: false,
+        retina: 'auto',
+
+        update: function() {
+            radius = 2 + abs( sin( this.millis * 0.003 ) * 50 );
+        },
+
+        click: function() {
+            randomColor = parseInt( 0 + (COLOURS.length - 0) * Math.random(), 10 ) ;
+        },
+
+        touchmove: function() {
+
+            for ( var i = this.touches.length - 1, touch; i >= 0; i-- ) {
+
+                touch = this.touches[i];
+
+                this.lineCap = 'round';
+                this.lineJoin = 'round';
+                this.fillStyle = this.strokeStyle = COLOURS[ randomColor % COLOURS.length ];
+                this.lineWidth = radius;
+
+                this.beginPath();
+                this.moveTo( touch.ox, touch.oy );
+                this.lineTo( touch.x, touch.y );
+                this.stroke();
+            }
+        },
+
+        touchend: function() {
+            randomColor = parseInt( 0 + (COLOURS.length - 0) * Math.random(), 10 ) ;
+        }
+    });
+
+
+</script>
+
+</body>
