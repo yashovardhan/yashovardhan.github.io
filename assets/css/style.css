@@ -7,11 +7,6 @@ body, html {
     position: relative;
     margin-right: 0 !important;
     margin: 0;
-    text-shadow:
-    -1px -1px 0 #F0F0FE,  
-     1px -1px 0 #F0F0FE,
-    -1px  1px 0 #F0F0FE,
-     1px  1px 0 #F0F0FE;
 }
 
 a {

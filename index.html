@@ -18,7 +18,7 @@
 
 </head>
 
-<body>
+<body onclick="colourChange()">
 
 <div class="page-wrapper">
     <header>
@@ -27,7 +27,7 @@
             <ul class="navigation animate">
                 <li><a href="" data-toggle="modal" data-target="#modal-about">About</a></li>
                 <!--<li><a href="" data-toggle="modal" data-target="#modal-projects">Projects</a></li>-->
-                <li><a href="mailto:connect@yashovardhan.dev" target="_blank">Let's Connect!</a</li>
+                <li><a href="mailto:connect@yashovardhan.dev" target="_blank">Let's Connect!</a></li>
             </ul>
             <!--end navigation-->
         </nav>
@@ -35,8 +35,8 @@
     <div class="content-wrapper">
         <div class="content-main animate">
             <div class="container">
-                <h1 class="font-size-90" style="-webkit-text-stroke: 1px white;">Hi, I'm Yash</h1>
-                <h2 style="font-weight: 700;">Open Source | Developer Relations | JavaScript</h2>
+                <h1 class="font-size-90">Hi, I'm Yash!</h1>
+                <h2 style="font-weight: 700;">Open Source Developer Relations | JavaScript</h2>
             </div>
             <!--end container-->
         </div>
@@ -533,9 +533,13 @@
 
 <script>
 
-    var COLOURS = [ '#656795', '#F0F0FE', '#2f2e40', '#FFFFFF'];
+    var COLOURS = [ '#c3c4eb', '#FDF5E6', '#FFEBCD', '#F0F0FE', '#FFFFFF', '#FFFAFA', '#E0E0E0'];
     var radius = 0;
     var randomColor = 0;
+
+    function colourChange() {
+        randomColor = parseInt( 0 + (COLOURS.length - 0) * Math.random(), 10 ) ;
+    }
 
     Sketch.create({
 
@@ -547,9 +551,7 @@
             radius = 300;
         },
 
-        click: function() {
-            randomColor = parseInt( 0 + (COLOURS.length - 0) * Math.random(), 10 ) ;
-        },
+        click: () => colourChange(),
 
         touchmove: function() {
 
@@ -569,9 +571,7 @@
             }
         },
 
-        touchend: function() {
-            randomColor = parseInt( 0 + (COLOURS.length - 0) * Math.random(), 10 ) ;
-        }
+        touchend: () => colourChange()
     });
 
 
