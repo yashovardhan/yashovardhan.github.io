@@ -629,7 +629,7 @@ form .status i {
 
 .page-wrapper header {
     position: fixed;
-    z-index: 999;
+    z-index: 9;
     padding: 1.875rem;
     display: table;
     width: 100%;
@@ -659,23 +659,6 @@ form .status i {
     text-transform: uppercase;
     font-size: .75rem;
     pointer-events: auto;
-}
-
-/* -- Magnific Popup */
-
-.mfp-wrap {
-    z-index: 2000;
-}
-
-.mfp-bg {
-    z-index: 1999;
-}
-
-/* -- Map */
-
-#map {
-    height: 12.5rem;
-    width: 100%;
 }
 
 /* -- Modal */
@@ -879,3 +862,128 @@ form .status i {
     color: #6c757d;
     opacity: 0.8;
 }
+
+.nav-tgl {
+    display: inline-block;
+    cursor: pointer;
+    position: fixed;
+    z-index: 200;
+    right: 30px;
+    top: 30px;
+    width: 70px;
+    height: 70px;
+    border: none;
+    border-radius: 50%;
+    padding: 0;
+    background: #fff;
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.24);
+    line-height: 0.6;
+    text-align: center;
+  }
+  .nav-tgl > span {
+    display: inline-block;
+    position: relative;
+    height: 2px;
+    width: 34px;
+    border-radius: 1px;
+    background: #293335;
+    vertical-align: middle;
+  }
+  .nav-tgl > span:before, .nav-tgl > span:after {
+    display: inline-block;
+    position: absolute;
+    content: "";
+    height: 2px;
+    border-radius: 1px;
+    background: #293335;
+    transition: all 200ms;
+  }
+  .nav-tgl > span:before {
+    top: -11px;
+    left: 3px;
+    width: 28px;
+  }
+  .nav-tgl > span:after {
+    top: 11px;
+    left: 6px;
+    width: 22px;
+  }
+  .nav-tgl:focus {
+    outline: none;
+  }
+  .nav-tgl:hover > span:after, .nav-tgl:hover > span:before {
+    width: 34px;
+    left: 0;
+  }
+  
+  .nav {
+    display: block;
+    z-index: 199;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    transition: all 500ms ease-in-out;
+    clip-path: circle(30px at calc(100% - 65px) 65px);
+    visibility: hidden;
+    justify-content: center;
+    align-self: center;
+    align-content: center;
+    align-items: center;
+  }
+
+  .nav-content {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .nav-link {
+    color:#FFFFFF;
+    font-size: 3rem;
+    font-weight: bold;
+    opacity: .8;
+  }
+
+  .nav-link:hover {
+    opacity: 1;
+  }
+
+  .nav footer .social-icons a {
+    opacity: .7;
+    color: #FFFFFF;
+    padding: .3125rem .625rem;
+    display: inline-block;
+    font-size: 1.125rem;
+}
+
+.nav footer .social-icons a:hover {
+    opacity: 1;
+}
+
+  .menu {
+    z-index: 100;
+  }
+  
+  .menu.active .nav {
+    visibility: visible;
+    clip-path: circle(100%);
+  }
+  .menu.active .nav-tgl > span {
+    height: 0;
+  }
+  .menu.active .nav-tgl > span:after, .menu.active .nav-tgl > span:before {
+    top: 0px;
+    left: 0;
+    width: 34px;
+  }
+  .menu.active .nav-tgl > span:after {
+    transform: rotate(-45deg);
+  }
+  .menu.active .nav-tgl > span:before {
+    transform: rotate(45deg);
+  }
