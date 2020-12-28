@@ -1005,3 +1005,35 @@ form .status i {
   .menu.active .nav-tgl > span:before {
     transform: rotate(45deg);
   }
+
+  @media (max-width: 480px) {
+    .font-size-90 {
+        font-size: 3.625rem;
+    }
+    h2 {
+        font-size: 1rem;
+    }
+    .nav-link {
+        font-size: 1.5rem;
+    }
+    .nav-tgl {
+        width: 60px;
+        height: 60px;
+    }
+    }
+
+    @media (min-width: 481px) and (max-width: 768px) {
+        .font-size-90 {
+            font-size: 4.625rem;
+        }
+        h2 {
+            font-size: 1.25rem;
+        }
+        .nav-link {
+            font-size: 2rem;
+        }
+        .nav-tgl {
+            width: 65px;
+            height: 65px;
+        }
+    }
