@@ -1009,13 +1009,13 @@ form .status i {
 
   @media (max-width: 480px) {
     .font-size-90 {
-        font-size: 3.625rem;
+        font-size: 4rem;
     }
     h2 {
-        font-size: 1rem;
+        font-size: 1.25rem;
     }
     .nav-link {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
     .nav-tgl {
         width: 60px;
@@ -1025,13 +1025,13 @@ form .status i {
 
     @media (min-width: 481px) and (max-width: 768px) {
         .font-size-90 {
-            font-size: 4.625rem;
+            font-size: 5rem;
         }
         h2 {
-            font-size: 1.25rem;
+            font-size: 1.4rem;
         }
         .nav-link {
-            font-size: 2rem;
+            font-size: 2.2rem;
         }
         .nav-tgl {
             width: 65px;
