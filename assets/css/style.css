@@ -52,7 +52,7 @@ h5 {
 }
 
 p {
-    opacity: .6;
+    opacity: 1;
 }
 
 img {
@@ -681,10 +681,11 @@ form .status i {
     text-align: left;
     vertical-align: middle;
     max-width: 100%;
+    border-radius: 20px;
 }
 
 .modal-dialog .modal-content {
-    border-radius: 0;
+    border-radius: 20px;
     border: none;
 }
 
@@ -700,6 +701,8 @@ form .status i {
 
 .modal-dialog .modal-content .modal-header {
     border-bottom: none;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     padding: 4.0625rem 2.8125rem;
 }
 
@@ -707,10 +710,12 @@ form .status i {
     opacity: 1;
     background-color: #fff;
     padding: .625rem .875rem;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
-    margin-top: 0;
+    margin-top: -1%;
+    border-radius: 100%;
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.24);
 }
 
 .modal-dialog .modal-content .modal-body {
@@ -748,7 +753,6 @@ form .status i {
 }
 
 .person h5 {
-    opacity: .7;
     margin-top: .3125rem;
 }
 
@@ -806,43 +810,49 @@ form .status i {
     display: inline-block;
 }
 
-/* -- Work */
+/* -- project */
 
-.work {
+.project {
     display: block;
     position: relative;
     margin-bottom: 1.875rem;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #F0F0FE;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
-.work .description {
+.project .description {
     position: absolute;
     bottom: .625rem;
     z-index: 2;
     left: .625rem;
 }
 
-.work .description h4 {
-    font-size: 1.125rem;
+.project .description h4 {
+    font-size: 1.250rem;
     font-weight: bold;
     margin-bottom: .125rem;
     margin-top: 0;
-    background-color: #fff;
-    padding: .125rem;
+    background-color: #F0F0FE;
+    opacity: 0.8;
+    padding: .250rem;
     display: inline-block;
+    color: #2f2e40;
+    border-radius: .250rem;
 }
 
-.work .description h5 {
-    font-size: .875rem;
+.project .description h5 {
+    font-size: 1rem;
     margin-bottom: 0;
     margin-top: 0;
-    background-color: #fff;
-    padding: .125rem;
-}
-
-.work .image {
-    position: relative;
-    height: 13.75rem;
-    z-index: 1;
+    background-color: #F0F0FE;
+    opacity: 0.8;
+    padding: .250rem;
+    color: #2f2e40;
+    border-top-left-radius: .250rem;
+    border-bottom-left-radius: .250rem;
 }
 
 @media screen and (min-width: 48rem) {
@@ -944,7 +954,7 @@ form .status i {
 
   .nav-link {
     color:#FFFFFF;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: bold;
     opacity: .8;
   }
@@ -953,7 +963,15 @@ form .status i {
     opacity: 1;
   }
 
-  .nav footer .social-icons a {
+  .nav .footer{
+    position: fixed;
+    bottom: .625rem;
+    text-align: center;
+    width: 100%;
+    z-index: 200;
+  }
+
+  .nav .footer .social-icons a {
     opacity: .7;
     color: #FFFFFF;
     padding: .3125rem .625rem;
@@ -961,7 +979,7 @@ form .status i {
     font-size: 1.125rem;
 }
 
-.nav footer .social-icons a:hover {
+.nav .footer .social-icons a:hover {
     opacity: 1;
 }
 
