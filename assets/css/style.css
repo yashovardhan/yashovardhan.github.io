@@ -713,8 +713,8 @@ form .status i {
     position: absolute;
     top: 0;
     right: 0;
-    margin-top: 1%;
-    margin-right: 1%;
+    margin-top: .875rem;
+    margin-right: .875rem;
     border-radius: 100%;
     box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.24);
 }
@@ -945,12 +945,17 @@ form .status i {
 
   .nav-content {
     margin: 0;
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 50%;
-    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    width: 100%;
     text-align: center;
+  }
+
+  .nav-content a {
+    padding: 50;
+    vertical-align: middle;
   }
 
   .nav-link {
