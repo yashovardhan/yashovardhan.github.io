@@ -111,6 +111,35 @@ section {
 	transform: scale(1);
 }
 
+/* Header */
+
+.page-wrapper header {
+	position: fixed;
+	z-index: 9;
+	padding: 1.875rem;
+	display: table;
+	width: 100%;
+	pointer-events: none;
+}
+
+.page-wrapper header .logo {
+	text-align: left;
+	display: table-cell;
+	vertical-align: middle;
+	pointer-events: auto;
+}
+
+.page-wrapper header .logo a {
+	display: block;
+	width: 20vh;
+	height: auto;
+}
+
+.page-wrapper header .logo a img {
+	width: 100%;
+	height: auto;
+}
+
 /* Footer */
 
 footer {
@@ -130,24 +159,6 @@ footer .social-icons a {
 
 footer .social-icons a:hover {
 	opacity: 1;
-}
-
-/* Header */
-
-.page-wrapper header {
-	position: fixed;
-	z-index: 9;
-	padding: 1.875rem;
-	display: table;
-	width: 100%;
-	pointer-events: none;
-}
-
-.page-wrapper header .logo {
-	text-align: left;
-	display: table-cell;
-	vertical-align: middle;
-	pointer-events: auto;
 }
 
 /* Modal */
@@ -398,7 +409,7 @@ footer .social-icons a:hover {
 	background-size: cover;
 }
 
-/* Nav */
+/* Nav Toggle */
 
 .nav-tgl {
 	display: inline-block;
@@ -453,6 +464,8 @@ footer .social-icons a:hover {
 	left: 0;
 }
 
+/* Nav */
+
 .nav {
 	display: block;
 	z-index: 199;
@@ -493,6 +506,38 @@ footer .social-icons a:hover {
 
 .nav-link:hover {
 	opacity: 1;
+}
+
+.nav .header {
+	position: fixed;
+	z-index: 9;
+	padding: 1.875rem;
+	display: table;
+	width: 100%;
+	pointer-events: none;
+}
+
+.nav .header .logo {
+	text-align: left;
+	display: table-cell;
+	vertical-align: middle;
+	pointer-events: auto;
+}
+
+.nav .header .logo a {
+	opacity: .7;
+	display: block;
+	width: 20vh;
+	height: auto;
+}
+
+.nav .header .logo a:hover {
+	opacity: 1;
+}
+
+.nav .header .logo a img {
+	width: 100%;
+	height: auto;
 }
 
 .nav .footer{
