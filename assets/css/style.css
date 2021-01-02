@@ -837,7 +837,7 @@ form .status i {
     margin-bottom: .125rem;
     margin-top: 0;
     background-color: #F0F0FE;
-    opacity: 0.9;
+    opacity: 1;
     padding: .250rem;
     display: inline-block;
     color: #2f2e40;
@@ -849,7 +849,7 @@ form .status i {
     margin-bottom: 0;
     margin-top: 0;
     background-color: #F0F0FE;
-    opacity: 0.8;
+    opacity: 1;
     padding: .250rem;
     color: #2f2e40;
     border-top-left-radius: .250rem;
