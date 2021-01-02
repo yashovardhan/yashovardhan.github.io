@@ -861,7 +861,7 @@ form .status i {
     position: absolute;
     bottom: 0;
     width: 100%;
-    transform: translateY(calc(80px + 1em));
+    transform: translateY(calc(60%));
     transition: transform 0.3s;
   }
   .card .data .content {
@@ -877,6 +877,7 @@ form .status i {
   .card .title {
     margin-top: 10px;
     color: #2f2e40;
+    font-weight: 700;
   }
   .card .text {
     height: auto;
