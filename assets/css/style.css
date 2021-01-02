@@ -193,6 +193,7 @@ footer .social-icons a:hover {
 	border-top-left-radius: 20px;
 	border-top-right-radius: 20px;
 	padding: 4.0625rem 2.8125rem;
+	background-color: #F0F0FE;
 }
 
 .modal-dialog .modal-content .modal-header .close {
