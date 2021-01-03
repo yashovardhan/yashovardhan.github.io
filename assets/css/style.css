@@ -651,6 +651,9 @@ footer .social-icons a:hover {
 	.nav-content {
 		top: 45%;
 	}
+	.nav-content a {
+		padding: 30;
+	}
 }
 
 
@@ -678,6 +681,9 @@ footer .social-icons a:hover {
 	.nav-content {
 		top: 40%;
 	}
+	.nav-content a {
+		padding: 20;
+	}
 }
 
 @media (max-height: 299px) {
@@ -702,5 +708,8 @@ footer .social-icons a:hover {
 	}
 	.nav-content {
 		top: 35%;
+	}
+	.nav-content a {
+		padding: 10;
 	}
 }
