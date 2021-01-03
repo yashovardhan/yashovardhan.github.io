@@ -642,11 +642,20 @@ footer .social-icons a:hover {
 		width: 60px;
 		height: 60px;
 	}
+	footer .social-icons a {
+		font-size: 1rem;
+	}
+	.nav .footer .social-icons a {
+		font-size: 1rem;
+	}
+	.nav-content {
+		top: 45%;
+	}
 }
 
 
 
-@media (max-height: 333px) {
+@media (min-height: 300px) and (max-height: 333px) {
 	.page-title {
 		font-size: 3rem;
 	}
@@ -660,8 +669,38 @@ footer .social-icons a:hover {
 		width: 60px;
 		height: 60px;
 	}
+	footer .social-icons a {
+		font-size: 0.75rem;
+	}
+	.nav .footer .social-icons a {
+		font-size: 0.75rem;
+	}
+	.nav-content {
+		top: 40%;
+	}
 }
 
-@media (max-height) {
-
+@media (max-height: 299px) {
+	.page-title {
+		font-size: 3rem;
+	}
+	h2 {
+		font-size: 1rem;
+	}
+	.nav-link {
+		font-size: 0.75rem;
+	}
+	.nav-tgl {
+		width: 60px;
+		height: 60px;
+	}
+	footer .social-icons a {
+		font-size: 0.75rem;
+	}
+	.nav .footer .social-icons a {
+		font-size: 0.75rem;
+	}
+	.nav-content {
+		top: 35%;
+	}
 }
