@@ -126,7 +126,7 @@ section {
 	text-align: left;
 	display: table-cell;
 	vertical-align: middle;
-	pointer-events: auto;
+	pointer-events: none;
 }
 
 .page-wrapper header .logo a {
