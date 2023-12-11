@@ -1,6 +1,10 @@
-body, html {
+html {
+	--main-bg-color: #F0F0FE;
+}
+  
+  body, html {
 	height: 100%;
-	background-color: #F0F0FE;
+	background-color: var(--main-bg-color);;
 	font-family: "Source Sans Pro", Helvetica, sans-serif;
 	font-size: 1rem;
 	overflow: hidden;

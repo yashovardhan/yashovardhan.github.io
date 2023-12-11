@@ -1,10 +1,27 @@
-var COLOURS = [ '#c3c4eb', '#FDF5E6', '#FFEBCD', '#F0F0FE', '#FFFFFF', '#FFFAFA', '#E0E0E0'];
+var COLOURS = [
+	'#FFF0F5',
+	'#F0FFF0',
+	'#F0F8FF',
+	'#FFFACD',
+	'#E0FFFF',
+	'#F5FFFA',
+	'#FFF5EE',
+	'#FFE4C4',
+	'#FFFFE0',
+	'#FFDAB9',
+	'#FAFAD2',
+	'#87CEEB',
+];
 var radius = 0;
 var randomColor = 0;
 
 function colourChange() {
 	randomColor = parseInt( 0 + (COLOURS.length - 0) * Math.random(), 10 ) ;
 }
+
+colourChange();
+console.log(COLOURS[ randomColor % COLOURS.length ]);
+document.documentElement.style.setProperty('--main-bg-color', COLOURS[ randomColor % COLOURS.length ]);
 
 const menu = document.querySelector('.menu');
 const btn = menu.querySelector('.nav-tgl');
@@ -45,7 +62,7 @@ Sketch.create({
 	retina: 'auto',
 
 	update: function() {
-		radius = 300;
+		radius = 200;
 	},
 
 	click: () => colourChange(),
