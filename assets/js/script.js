@@ -20,8 +20,8 @@ function colourChange() {
 }
 
 colourChange();
-console.log(COLOURS[ randomColor % COLOURS.length ]);
 document.documentElement.style.setProperty('--main-bg-color', COLOURS[ randomColor % COLOURS.length ]);
+colourChange();
 
 const menu = document.querySelector('.menu');
 const btn = menu.querySelector('.nav-tgl');
