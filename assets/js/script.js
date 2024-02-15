@@ -10,7 +10,6 @@ var COLOURS = [
 	'#FFFFE0',
 	'#FFDAB9',
 	'#FAFAD2',
-	'#87CEEB',
 ];
 var radius = 0;
 var randomColor = 0;
