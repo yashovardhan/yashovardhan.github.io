@@ -471,7 +471,7 @@ footer .social-icons a:hover {
 /* Nav */
 
 .nav {
-	display: block;
+	/* display: block; */
 	z-index: 199;
 	position: relative;
 	width: 100vw;
@@ -480,10 +480,9 @@ footer .social-icons a:hover {
 	transition: all 500ms ease-in-out;
 	clip-path: circle(30px at calc(100% - 65px) 65px);
 	visibility: hidden;
-	justify-content: center;
+	/* justify-content: center;
 	align-self: center;
-	align-content: center;
-	align-items: center;
+	align-items: center; */
 }
 
 .nav-content {
