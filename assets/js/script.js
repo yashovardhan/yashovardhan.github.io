@@ -49,10 +49,10 @@ navItem4.addEventListener('click', evt => {
 	menu.classList.toggle('active');
 	colourChange();
 });
-navItem5.addEventListener('click', evt => {
-	menu.classList.toggle('active');
-	colourChange();
-});
+// navItem5.addEventListener('click', evt => {
+// 	menu.classList.toggle('active');
+// 	colourChange();
+// });
 
 Sketch.create({
 
