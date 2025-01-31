@@ -206,15 +206,12 @@ footer .social-icons a:hover {
 
 .modal-dialog .modal-content .modal-header .close {
 	opacity: 1;
-	background-color: #fff;
 	padding: .625rem .875rem;
 	position: absolute;
 	top: 0;
 	right: 0;
 	margin-top: .875rem;
 	margin-right: .875rem;
-	border-radius: 100%;
-	box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.24);
 }
 
 .modal-dialog .modal-content .modal-body {
