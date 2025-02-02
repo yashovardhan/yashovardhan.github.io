@@ -43,7 +43,7 @@ const AboutModal = ({ aboutModalOpen, toggleAboutModal }: AboutModalProps) => {
         onPointerEnterCapture={() => {}}
         onPointerLeaveCapture={() => {}}
       >
-        <div className="flex flex-col items-start justify-start h-[80vh] overflow-y-auto">
+        <div className="flex flex-col items-start justify-start max-h-[80vh] overflow-y-auto">
           {/* Close Button */}
           <button
             onClick={toggleAboutModal}
