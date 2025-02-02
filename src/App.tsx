@@ -80,16 +80,14 @@ function App() {
             </a>
           </div>
         </header>
-        <div className="table h-full w-full absolute">
-          <div className="table-cell align-middle text-center relative z-10 pointer-events-none">
-            <div className="relative z-10">
-              <h1 className="text-5xl md:text-7xl 2xl:text-8xl font-bold mb-5">
-                Hi, I'm Yash!
-              </h1>
-              <h2 className="text-lg md:text-2xl 2xl:text-3xl font-bold">
-                Open Source | Developer Relations | Web3
-              </h2>
-            </div>
+        <div className="absolute inset-0 flex items-center justify-center">
+          <div className="relative z-10 pointer-events-none text-center">
+            <h1 className="text-5xl md:text-7xl 2xl:text-8xl font-bold mb-5">
+              Hi, I'm Yash!
+            </h1>
+            <h2 className="text-lg md:text-2xl 2xl:text-3xl font-bold">
+              Open Source | Developer Relations | Web3
+            </h2>
           </div>
           <div className="absolute inset-0 z-0 overflow-hidden">
             <div id="background-content" className="w-full h-full"></div>
