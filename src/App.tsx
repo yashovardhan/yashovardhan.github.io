@@ -1,19 +1,14 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useState, useEffect } from "react";
 import Sketch from "sketch-js";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faLinkedin,
-  faGithub,
-  faMedium,
-  faXTwitter,
-} from "@fortawesome/free-brands-svg-icons";
-import { faEnvelopeOpen } from "@fortawesome/free-regular-svg-icons";
+
+import Footer from "./components/Footer";
+import AboutModal from "./components/AboutModal";
+import getRandomColor from "./components/Colors";
+import Menu from "./components/Menu";
 
 import logo from "/src/assets/img/logo.png";
 import logoWhite from "/src/assets/img/logo-white.png";
-import AboutModal from "./components/AboutModal";
-import getRandomColor from "./components/Colors";
 
 const backgroundColor = getRandomColor();
 
@@ -100,141 +95,15 @@ function App() {
             <div id="background-content" className="w-full h-full"></div>
           </div>
         </div>
-        <div className={`menuButton ${menuActive ? "active" : ""}`}>
-          <button className="menuTgl" type="button" onClick={toggleMenu}>
-            <span></span>
-          </button>
-          <div className="menu z-[199] relative w-screen h-screen bg-black/90 transition-all duration-500 ease-in-out [clip-path:circle(30px_at_calc(100%_-_65px)_65px)] invisible">
-            <div className="fixed z-[9] p-[30px] table w-full pointer-events-none">
-              <div className="text-left">
-                <a
-                  href="https://yashovardhan.dev"
-                  className="block w-[20vh] h-auto opacity-70 hover:opacity-100"
-                >
-                  <img className="w-full h-auto" src={logoWhite} alt="yash" />
-                </a>
-              </div>
-            </div>
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center flex flex-col items-center justify-center">
-              <a
-                className="py-3 md:py-4 2xl:py-5 align-middle no-underline"
-                onClick={() => {
-                  toggleAboutModal();
-                  toggleMenu();
-                }}
-              >
-                <h1 className="text-white text-3xl md:text-4xl 2xl:text-5xl font-bold opacity-80 hover:opacity-100">
-                  About
-                </h1>
-              </a>
-              <a
-                href="https://devrel.page/"
-                className="py-3 md:py-4 2xl:py-5 align-middle no-underline"
-                onClick={toggleMenu}
-              >
-                <h1 className="text-white text-3xl md:text-4xl 2xl:text-5xl  font-bold opacity-80 hover:opacity-100">
-                  DevRel.Page
-                </h1>
-              </a>
-              <a
-                href="https://medium.com/@yashovardhana"
-                className="py-3 md:py-4 2xl:py-5 align-middle no-underline"
-                onClick={toggleMenu}
-              >
-                <h1 className="text-white text-3xl md:text-4xl 2xl:text-5xl  font-bold opacity-80 hover:opacity-100">
-                  Blog
-                </h1>
-              </a>
-              <a
-                href="mailto:connect@yashovardhan.dev"
-                target="_blank"
-                className="py-3 md:py-4 2xl:py-5 align-middle no-underline"
-                onClick={toggleMenu}
-              >
-                <h1 className="text-white text-3xl md:text-4xl 2xl:text-5xl  font-bold opacity-80 hover:opacity-100">
-                  Let's Connect!
-                </h1>
-              </a>
-            </div>
-            <div className="fixed bottom-3 w-full text-center z-50">
-              <a
-                href="https://twitter.com/yashovardhan"
-                target="_blank"
-                className="opacity-70 hover:opacity-100 text-white px-2.5 py-1.5 inline-block text-lg"
-              >
-                <FontAwesomeIcon icon={faXTwitter} />
-              </a>
-              <a
-                href="https://github.com/yashovardhan"
-                target="_blank"
-                className="opacity-70 hover:opacity-100 text-white px-2.5 py-1.5 inline-block text-lg"
-              >
-                <FontAwesomeIcon icon={faGithub} />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/yashovardhanagrawal/"
-                target="_blank"
-                className="opacity-70 hover:opacity-100 text-white px-2.5 py-1.5 inline-block text-lg"
-              >
-                <FontAwesomeIcon icon={faLinkedin} />
-              </a>
-              <a
-                href="https://medium.com/@yashovardhana"
-                target="_blank"
-                className="opacity-70 hover:opacity-100 text-white px-2.5 py-1.5 inline-block text-lg"
-              >
-                <FontAwesomeIcon icon={faMedium} />
-              </a>
-              <a
-                href="mailto:yashovardhan.agrawal@gmail.com"
-                target="_blank"
-                className="opacity-70 hover:opacity-100 text-white px-2.5 py-1.5 inline-block text-lg"
-              >
-                <FontAwesomeIcon icon={faEnvelopeOpen} />
-              </a>
-            </div>
-          </div>
-        </div>
-        <footer>
-          <div className="fixed bottom-3 w-full text-center z-50">
-            <a
-              href="https://twitter.com/yashovardhan"
-              target="_blank"
-              className="opacity-50 hover:opacity-100 text-[#2f2e40] px-2.5 py-1.5 inline-block text-lg"
-            >
-              <FontAwesomeIcon icon={faXTwitter} />
-            </a>
-            <a
-              href="https://github.com/yashovardhan"
-              target="_blank"
-              className="opacity-50 hover:opacity-100 text-[#2f2e40] px-2.5 py-1.5 inline-block text-lg"
-            >
-              <FontAwesomeIcon icon={faGithub} />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/yashovardhanagrawal/"
-              target="_blank"
-              className="opacity-50 hover:opacity-100 text-[#2f2e40] px-2.5 py-1.5 inline-block text-lg"
-            >
-              <FontAwesomeIcon icon={faLinkedin} />
-            </a>
-            <a
-              href="https://medium.com/@yashovardhana"
-              target="_blank"
-              className="opacity-50 hover:opacity-100 text-[#2f2e40] px-2.5 py-1.5 inline-block text-lg"
-            >
-              <FontAwesomeIcon icon={faMedium} />
-            </a>
-            <a
-              href="mailto:yashovardhan.agrawal@gmail.com"
-              target="_blank"
-              className="opacity-50 hover:opacity-100 text-[#2f2e40] px-2.5 py-1.5 inline-block text-lg"
-            >
-              <FontAwesomeIcon icon={faEnvelopeOpen} />
-            </a>
-          </div>
-        </footer>
+        <Menu
+          menuActive={menuActive}
+          toggleMenu={toggleMenu}
+          toggleAboutModal={toggleAboutModal}
+          logo={logoWhite}
+        />
+        
       </div>
+      <Footer mode="dark" />
 
       <AboutModal
         aboutModalOpen={aboutModalOpen}

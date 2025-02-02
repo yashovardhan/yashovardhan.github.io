@@ -12,6 +12,7 @@ import {
   faXTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelopeOpen } from "@fortawesome/free-regular-svg-icons";
+import { faTimes } from "@fortawesome/free-solid-svg-icons";
 
 interface AboutModalProps {
   aboutModalOpen: boolean;
@@ -44,9 +45,9 @@ const AboutModal = ({ aboutModalOpen, toggleAboutModal }: AboutModalProps) => {
         {/* Close Button */}
         <button
           onClick={toggleAboutModal}
-          className="absolute top-1 right-4 text-gray-500 hover:text-gray-800 text-lg"
+          className="absolute top-2 right-4 text-gray-500 hover:text-gray-800 text-lg"
         >
-          &times;
+          <FontAwesomeIcon icon={faTimes} />
         </button>
         {/* Header Section */}
         <DialogHeader
