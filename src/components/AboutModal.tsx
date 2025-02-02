@@ -13,7 +13,12 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelopeOpen } from "@fortawesome/free-regular-svg-icons";
 
-const AboutModal = ({ aboutModalOpen, toggleAboutModal }) => {
+interface AboutModalProps {
+  aboutModalOpen: boolean;
+  toggleAboutModal: () => void;
+}
+
+const AboutModal = ({ aboutModalOpen, toggleAboutModal }: AboutModalProps) => {
   const theme = {
     dialog: {
       styles: {
@@ -32,6 +37,9 @@ const AboutModal = ({ aboutModalOpen, toggleAboutModal }) => {
         open={aboutModalOpen}
         handler={toggleAboutModal}
         className="flex flex-col items-start justify-center rounded-3xl" // Black translucent background
+        placeholder=""
+        onPointerEnterCapture={() => {}}
+        onPointerLeaveCapture={() => {}}
       >
         {/* Close Button */}
         <button
@@ -40,9 +48,12 @@ const AboutModal = ({ aboutModalOpen, toggleAboutModal }) => {
         >
           &times;
         </button>
-
         {/* Header Section */}
-        <DialogHeader>
+        <DialogHeader
+          placeholder=""
+          onPointerEnterCapture={() => {}}
+          onPointerLeaveCapture={() => {}}
+        >
           <div className="grid grid-flow-row gap-4 md:grid-flow-col">
             {/* Image Section */}
             <div className="flex justify-start items-center">
@@ -110,7 +121,12 @@ const AboutModal = ({ aboutModalOpen, toggleAboutModal }) => {
         </DialogHeader>
 
         {/* Body Section */}
-        <DialogBody className="text-gray-700 text-base leading-relaxed space-y-4">
+        <DialogBody
+          className="text-gray-700 text-base leading-relaxed space-y-4"
+          placeholder=""
+          onPointerEnterCapture={() => {}}
+          onPointerLeaveCapture={() => {}}
+        >
           <p>
             Yash is an accomplished Developer Relations leader and a seasoned
             JavaScript developer with a strong background in Web3 and open
