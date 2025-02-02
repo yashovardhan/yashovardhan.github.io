@@ -2,7 +2,7 @@
 
 Welcome to my personal website! This project leverages a modern technology stack to ensure a seamless development experience and a visually appealing design. Whether you're here to learn, contribute, or customize your own version, you’ll find everything you need in this professional template.
 
-## Technologies Used
+## Libraries Used
 
 - **React ⚛️:** A robust library for building interactive UIs using a component-based architecture.
 - **Vite ⚡:** A blazing-fast development server and build tool that features hot module replacement (HMR) for rapid development.
