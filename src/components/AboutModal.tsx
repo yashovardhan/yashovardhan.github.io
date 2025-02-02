@@ -38,24 +38,20 @@ const AboutModal = ({ aboutModalOpen, toggleAboutModal }: AboutModalProps) => {
       <Dialog
         open={aboutModalOpen}
         handler={toggleAboutModal}
-        className="flex flex-col items-start justify-center rounded-3xl" // Black translucent background
+        className="rounded-3xl p-4 fixed max-h-[90vh]"
         placeholder=""
         onPointerEnterCapture={() => {}}
         onPointerLeaveCapture={() => {}}
       >
-        {/* Close Button */}
-        <button
-          onClick={toggleAboutModal}
-          className="absolute top-2 right-4 text-gray-500 hover:text-gray-800 text-lg"
-        >
-          <FontAwesomeIcon icon={faTimes} />
-        </button>
-        {/* Header Section */}
-        <DialogHeader
-          placeholder=""
-          onPointerEnterCapture={() => {}}
-          onPointerLeaveCapture={() => {}}
-        >
+        <div className="flex flex-col items-start justify-start h-[80vh] overflow-y-auto">
+          {/* Close Button */}
+          <button
+            onClick={toggleAboutModal}
+            className="absolute top-2 right-4 text-gray-500 hover:text-gray-800 text-lg"
+          >
+            <FontAwesomeIcon icon={faTimes} />
+          </button>
+          {/* Header Section */}
           <div className="grid grid-flow-row gap-4 md:grid-flow-col">
             {/* Image Section */}
             <div className="flex justify-start items-center">
@@ -120,31 +116,26 @@ const AboutModal = ({ aboutModalOpen, toggleAboutModal }: AboutModalProps) => {
               </div>
             </div>
           </div>
-        </DialogHeader>
 
-        {/* Body Section */}
-        <DialogBody
-          className="text-gray-700 text-base leading-relaxed space-y-4"
-          placeholder=""
-          onPointerEnterCapture={() => {}}
-          onPointerLeaveCapture={() => {}}
-        >
-          <p>
-            Yash is an accomplished Developer Relations leader and a seasoned
-            JavaScript developer with a strong background in Web3 and open
-            source technologies. With years of experience building and nurturing
-            developer ecosystems, Yash specializes in bridging the gap between
-            complex technologies and developer-friendly solutions.
-          </p>
-          <p>
-            As a passionate advocate for open source and community-driven
-            innovation, he has empowered developers worldwide through impactful
-            initiatives, insightful content, and engaging sessions at global
-            conferences. Yash continues to drive innovation by fostering
-            collaboration and enabling developers to thrive in the ever-evolving
-            tech landscape.
-          </p>
-        </DialogBody>
+          {/* Body Section */}
+          <div className="text-gray-700 text-base leading-relaxed space-y-4 mt-4">
+            <p>
+              Yash is an accomplished Developer Relations leader and a seasoned
+              JavaScript developer with a strong background in Web3 and open
+              source technologies. With years of experience building and
+              nurturing developer ecosystems, Yash specializes in bridging the
+              gap between complex technologies and developer-friendly solutions.
+            </p>
+            <p>
+              As a passionate advocate for open source and community-driven
+              innovation, he has empowered developers worldwide through
+              impactful initiatives, insightful content, and engaging sessions
+              at global conferences. Yash continues to drive innovation by
+              fostering collaboration and enabling developers to thrive in the
+              ever-evolving tech landscape.
+            </p>
+          </div>
+        </div>
       </Dialog>
     </ThemeProvider>
   );
