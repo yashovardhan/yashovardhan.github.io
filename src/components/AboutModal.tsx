@@ -13,6 +13,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelopeOpen } from "@fortawesome/free-regular-svg-icons";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
+import yash from "../assets/img/yash.jpg";
 
 interface AboutModalProps {
   aboutModalOpen: boolean;
@@ -60,7 +61,7 @@ const AboutModal = ({ aboutModalOpen, toggleAboutModal }: AboutModalProps) => {
             <div className="flex justify-start items-center">
               <img
                 className="rounded-full w-32 h-32 object-cover"
-                src="/src/assets/img/yash.jpg"
+                src={yash}
                 alt="Yashovardhan Agrawal"
               />
             </div>
