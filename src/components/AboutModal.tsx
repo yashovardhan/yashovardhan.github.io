@@ -4,6 +4,7 @@ import {
   faGithub,
   faMedium,
   faXTwitter,
+  faTelegramPlane,
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelopeOpen } from "@fortawesome/free-regular-svg-icons";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
@@ -73,6 +74,14 @@ const AboutModal = ({ aboutModalOpen, toggleAboutModal }: AboutModalProps) => {
                 className="text-gray-500 hover:text-gray-800 text-xl"
               >
                 <FontAwesomeIcon icon={faXTwitter} />
+              </a>
+              <a
+                href="https://t.me/yashweb3"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-500 hover:text-gray-800 text-xl"
+              >
+                <FontAwesomeIcon icon={faTelegramPlane} />
               </a>
               <a
                 href="https://github.com/yashovardhan"

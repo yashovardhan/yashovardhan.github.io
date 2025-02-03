@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faXTwitter, faGithub, faLinkedin, faMedium } from "@fortawesome/free-brands-svg-icons";
+import { faXTwitter, faGithub, faLinkedin, faMedium, faTelegramPlane } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelopeOpen } from "@fortawesome/free-regular-svg-icons";
 
 interface FooterProps {
@@ -16,6 +16,9 @@ const Footer = ({ mode = "dark" }: FooterProps) => {
     <footer className="fixed bottom-3 w-full text-center z-50">
       <a href="https://twitter.com/yashovardhan" target="_blank" className={linkClasses}>
         <FontAwesomeIcon icon={faXTwitter} />
+      </a>
+      <a href="https://t.me/yashweb3" target="_blank" className={linkClasses}>
+        <FontAwesomeIcon icon={faTelegramPlane} />
       </a>
       <a href="https://github.com/yashovardhan" target="_blank" className={linkClasses}>
         <FontAwesomeIcon icon={faGithub} />
