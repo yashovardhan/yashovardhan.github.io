@@ -25,7 +25,7 @@ function App() {
       autoclear: false,
       retina: "auto",
       mouseover: function () {
-        const newColor = getRandomColor(backgroundColor);
+        const newColor = getRandomColor(randomColor);
         this.fillStyle = newColor;
         this.strokeStyle = newColor;
         setRandomColor(newColor);
@@ -43,7 +43,7 @@ function App() {
         }
       },
       touchstart: function () {
-        const newColor = getRandomColor(backgroundColor);
+        const newColor = getRandomColor(randomColor);
         this.fillStyle = newColor;
         this.strokeStyle = newColor;
         setRandomColor(newColor);
