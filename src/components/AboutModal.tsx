@@ -62,7 +62,7 @@ const AboutModal = ({ aboutModalOpen, toggleAboutModal }: AboutModalProps) => {
               Yashovardhan Agrawal
             </h3>
             <h4 className="text-lg text-gray-600">
-              Head of Developer Relations - Web3Auth
+              Senior Developer Advocate - Metamask (ConsenSys)
             </h4>
 
             {/* Social Icons */}
